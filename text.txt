@@ -1,0 +1,29 @@
+https://github.com/deworkerpro/demo-auction/tree/master/api/src/Auth
+
+Аутентификация через casbin
+
+Здесь только чистый домен без привязки к приложению и остальным вещам
+
+https://elisdn.ru/blog/104/domain-entities-modelling
+
+Разбиваем по модулям - разделение на отдельные подобласти - контекст
+
+Authentication
+Blog
+Comment
+
+docker-compose run --rm php-cli composer require ramsey/uuid
+docker-compose run --rm php-cli composer require webmozart/assert
+docker-compose run --rm php-cli composer require --dev friendsofphp/php-cs-fixer
+
+Тестируем отдельно составные части сущности
+
+- id
+- created_date
+- updated_date
+- email
+
+UserRepository наверно стоит вынести в отдельный пакет
+
+
+
