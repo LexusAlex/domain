@@ -8,8 +8,6 @@
         "sort-packages": true
     },
     "homepage": "https://lexusalex.ru/",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "authors": [
         {
             "name": "Alexsey Shmelev",
