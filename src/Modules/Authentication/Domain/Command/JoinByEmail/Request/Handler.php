@@ -8,6 +8,7 @@ use DateTimeImmutable;
 use Domain\Modules\Authentication\Domain\Entities\User\Types\Email;
 use Domain\Modules\Authentication\Domain\Entities\User\Types\Id;
 use Domain\Modules\Authentication\Domain\Entities\User\User;
+use Domain\Modules\Authentication\Domain\Repositories\UserRepository;
 use Domain\Modules\Authentication\Domain\Service\PasswordHash;
 use DomainException;
 
@@ -28,9 +29,9 @@ final class Handler
     {
         $email = new Email($command->email);
 
-        if ($this->users->hasByEmail($email)) {
+        /*if ($this->users->hasByEmail($email)) {
             throw new DomainException('User already exists.');
-        }
+        }*/
 
         $date = new DateTimeImmutable();
 

@@ -23,7 +23,13 @@ docker-compose run --rm php-cli composer require --dev friendsofphp/php-cs-fixer
 - updated_date
 - email
 
-UserRepository наверно стоит вынести в отдельный пакет
+UserRepository наверно стоит вынести в отдельный пакет, так он взаимодествует с базой данных
+
+Реализовать паттерн репозиторий
+
+Command
+    JoinByEmail - Регистрация по email
+        Request - Запрос по email
 
 
 

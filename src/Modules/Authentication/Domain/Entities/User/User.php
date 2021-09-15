@@ -19,10 +19,9 @@ final class User
     private DateTimeImmutable $date_update;
     private ?string $passwordHash = null;
 
-    private function __construct(Id $id, Name $name, DateTimeImmutable $date_create, Email $email)
+    private function __construct(Id $id, DateTimeImmutable $date_create, Email $email)
     {
         $this->id = $id;
-        $this->name = $name;
         $this->date_create = $date_create;
         $this->email = $email;
     }
